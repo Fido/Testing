@@ -1,3 +1,6 @@
 class Persona < ActiveRecord::Base
-	validates_presence_of :nombre
+		has_many :posts
+
+  validates_presence_of :nombre
+
 end
