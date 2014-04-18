@@ -1,24 +1,1 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Directorio</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<nav class="navbar navbar-inverse" role="navigation">
-	<li class="pull-left">
-		<ul class="label label-success"><%= link_to 'Inicio', personas_path %></ul>
-
-	</li>
-	<li class="pull-right">
-		
-		<ul class="label label-info"><%= link_to 'Personas', personas_path%></ul>
-	</li>
-</nav>
-
-<%= yield %>
-
-</body>
-</html>
+<!DOCTYPE html><html><head>  <title>Directorio</title>  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>  <%= csrf_meta_tags %></head><body><nav class="navbar navbar-inverse" role="navigation">	<li class="pull-left">		<ul class="label label-success"><%= link_to 'Inicio', personas_path %></ul>	</li>	<li class="pull-right">				<ul class="label label-info"><%= link_to 'Personas', personas_path%></ul>	</li>    <li class="pull-right">        <ul class="label label-warning"><%= link_to 'Posts', posts_path%></ul>    </li></nav><%= yield %></body></html>
